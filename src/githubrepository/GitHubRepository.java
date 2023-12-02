@@ -55,7 +55,7 @@ public class GitHubRepository {
         System.out.printf("Car Details:%nCar Make: %s%nCar Model: %s%nCar Color: %s%nNumber of Wheels: %d%n",
                   car.Make, car.Model, car.Colour, car.NumWheels);
 
-        
+        System.out.println("Thank you for your request. A member of our staff will be in touch shortly.");
     }
     
 }
