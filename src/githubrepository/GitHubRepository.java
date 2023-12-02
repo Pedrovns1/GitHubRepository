@@ -30,9 +30,11 @@ public class GitHubRepository {
         System.out.println("Enter number of wheels:");
         int NumWheels = sc.nextInt();
         
-     
+        Car car = new Car(Model, Make, Color , NumWheels);
         
         
+        System.out.println("These are the specifications of the car you selected.");
+        System.out.println("Car Make: " + car.Make + ", Car Model: " + car.Model + ", Car Color: " + car.Colour + ", Number of Wheels: " + car.NumWheels);
     }
     
 }
