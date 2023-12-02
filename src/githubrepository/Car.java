@@ -10,7 +10,7 @@ package githubrepository;
  */
 public class Car {
     
-     String Make;
+    String Make;
     String Model;
     String Colour;
     int NumWheels;
