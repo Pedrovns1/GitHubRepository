@@ -4,6 +4,8 @@
  */
 package githubrepository;
 
+import java.util.Scanner;
+
 /**
  *
  * @author peuvi
@@ -14,7 +16,7 @@ public class GitHubRepository {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner (System.in);
     }
     
 }
