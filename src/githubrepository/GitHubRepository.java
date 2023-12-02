@@ -18,6 +18,21 @@ public class GitHubRepository {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         
+        
+        
+        System.out.println("Enter your name:");
+        String Name = sc.nextLine();
+        
+        System.out.println("Enter your address:");
+        String Address = sc.nextLine();
+        
+        System.out.println("Enter your email:");
+        String Email = sc.nextLine();
+        
+        System.out.println("Enter your contact number:");
+        int ContactNumber = sc.nextInt();
+        sc.nextLine();
+                
         System.out.println("Enter car model:");
         String Model = sc.nextLine();
         
@@ -31,10 +46,16 @@ public class GitHubRepository {
         int NumWheels = sc.nextInt();
         
         Car car = new Car(Model, Make, Color , NumWheels);
+        PersonalData personalData = new PersonalData(Name, Address, Email, ContactNumber);
         
-        
+        System.out.println("These are the personal detail provid:");
+        System.out.printf("Personal Details:%nName: %s%nAddress: %s%nEmail: %s%nContact Number: %d%n",
+                  personalData.Name, personalData.Address, personalData.Email, personalData.ContactNumber);
         System.out.println("These are the specifications of the car you selected.");
-        System.out.println("Car Make: " + car.Make + ", Car Model: " + car.Model + ", Car Color: " + car.Colour + ", Number of Wheels: " + car.NumWheels);
+        System.out.printf("Car Details:%nCar Make: %s%nCar Model: %s%nCar Color: %s%nNumber of Wheels: %d%n",
+                  car.Make, car.Model, car.Colour, car.NumWheels);
+
+        
     }
     
 }
