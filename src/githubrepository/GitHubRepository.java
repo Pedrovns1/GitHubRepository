@@ -26,9 +26,18 @@ public class GitHubRepository {
         System.out.println("Enter your address:");
         String Address = sc.nextLine();
         
-        System.out.println("Enter your email:");
-        String Email = sc.nextLine();
+        String Email;
         
+        while (true){
+        System.out.println("Enter your email:");
+        Email = sc.nextLine();
+        
+        if (Email.matches(".+@.+\\..+")) {
+            break;
+        }else{
+            System.out.println("Invalid email format. Please enter a valid email.");
+        }
+        }
         System.out.println("Enter your contact number:");
         int ContactNumber = sc.nextInt();
         sc.nextLine();
