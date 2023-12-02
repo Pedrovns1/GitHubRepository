@@ -13,9 +13,9 @@ public class PersonalData {
     String Name;
     String Address;
     String Email;
-    int ContactNumber;
+    String ContactNumber;
 
-    public PersonalData(String Name, String Address, String Email, int ContactNumber) {
+    public PersonalData(String Name, String Address, String Email, String ContactNumber) {
         this.Name = Name;
         this.Address = Address;
         this.Email = Email;

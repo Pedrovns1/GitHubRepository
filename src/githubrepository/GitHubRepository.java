@@ -39,8 +39,8 @@ public class GitHubRepository {
         }
         }
         System.out.println("Enter your contact number:");
-        int ContactNumber = sc.nextInt();
-        sc.nextLine();
+        String ContactNumber = sc.nextLine();
+        
                 
         System.out.println("Enter car model:");
         String Model = sc.nextLine();
@@ -58,7 +58,7 @@ public class GitHubRepository {
         PersonalData personalData = new PersonalData(Name, Address, Email, ContactNumber);
         
         System.out.println("These are the personal detail provid:");
-        System.out.printf("Personal Details:%nName: %s%nAddress: %s%nEmail: %s%nContact Number: %d%n",
+        System.out.printf("Personal Details:%nName: %s%nAddress: %s%nEmail: %s%nContact Number: %s%n",
                   personalData.Name, personalData.Address, personalData.Email, personalData.ContactNumber);
         System.out.println("These are the specifications of the car you selected.");
         System.out.printf("Car Details:%nCar Make: %s%nCar Model: %s%nCar Color: %s%nNumber of Wheels: %d%n",
