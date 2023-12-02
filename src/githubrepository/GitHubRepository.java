@@ -17,6 +17,22 @@ public class GitHubRepository {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Enter car model:");
+        String Model = sc.nextLine();
+        
+        System.out.println("Enter car make:");
+        String Make = sc.nextLine();
+        
+        System.out.println("Enter car color:");
+        String Color = sc.nextLine();
+        
+        System.out.println("Enter number of wheels:");
+        int NumWheels = sc.nextInt();
+        
+     
+        
+        
     }
     
 }
