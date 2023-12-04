@@ -58,10 +58,10 @@ public class GitHubRepository {
         PersonalData personalData = new PersonalData(Name, Address, Email, ContactNumber);
         
         System.out.println("These are the personal detail provid:");
-        System.out.printf("Personal Details:%nName: %s%nAddress: %s%nEmail: %s%nContact Number: %s%n",
+        System.out.printf("%nName: %s%nAddress: %s%nEmail: %s%nContact Number: %s%n",
                   personalData.Name, personalData.Address, personalData.Email, personalData.ContactNumber);
         System.out.println("These are the specifications of the car you selected.");
-        System.out.printf("Car Details:%nCar Make: %s%nCar Model: %s%nCar Color: %s%nNumber of Wheels: %d%n",
+        System.out.printf("%nCar Make: %s%nCar Model: %s%nCar Color: %s%nNumber of Wheels: %d%n",
                   car.Make, car.Model, car.Colour, car.NumWheels);
 
         System.out.println("Thank you for your request. A member of our staff will be in touch shortly.");
